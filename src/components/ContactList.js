@@ -1,10 +1,15 @@
 import ContactCard from './ContactCard'
 
-const ContactList = () => {
+const ContactList = (props) => {
+    const renderContactList = props.contactData.map((contact) => {
+       return (
+           <ContactCard contact = {contact} />
+       )
+    })
+    
     return (
         <div>
-            <p>Contact List Component</p>
-            <ContactCard />
+            {renderContactList}
         </div>
     )
 }

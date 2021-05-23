@@ -1,7 +1,10 @@
-const ContactCard = () => {
+const ContactCard = (props) => {
+    const { name, email} = props.contact
     return (
         <div>
-            <p>Contact Card Component</p>
+            <p>{name}</p>
+            <p>{email}</p>
+            <hr />
         </div>
     )
 }

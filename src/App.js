@@ -1,11 +1,11 @@
 import Header from './components/Header'
-import ContactList from './components/ContactList'
+import ContactHome from './components/ContactHome'
 
 const App = () => {
   return (
     <div className="App">
      <Header />
-     <ContactList/>
+     <ContactHome/>
     </div>
   );
 }
