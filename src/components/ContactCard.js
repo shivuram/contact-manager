@@ -1,11 +1,11 @@
 import '../css/componentStyle.css'
 
 const ContactCard = (props) => {
-    const { name, email} = props.contact;
+    const { title, email} = props.contact;
     return (
         <div className="card-container">
             <div className="row">
-                <p className="row">{name}</p>
+                <p className="row">{title}</p>
                 <p className="row" >{email}</p>
             </div>
             <div className="column">
