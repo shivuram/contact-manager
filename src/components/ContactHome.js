@@ -17,7 +17,7 @@ const ContactHome = () => {
     ]
     return (
         <div>
-            <p>Contact List</p>
+            <h2>Add Contacts</h2>
             <ContactList contactData={contactData} />
         </div>
     )
