@@ -3,10 +3,14 @@ import '../css/componentStyle.css'
 import { Link } from 'react-router-dom'
 
 const ContactList = (props) => {
+    
+    const deleteContactHandler = (id) => {
+        props.getContactId(id);
+    }
 
     const renderContactList = props.contactData.map((contact) => {
        return (
-           <ContactCard contact = {contact} />
+           <ContactCard contact = {contact} key={contact.id} removeHandler={deleteContactHandler}/>
        )
     })
     

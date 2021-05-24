@@ -61,3 +61,22 @@
   img {
       width: 50px;
   }
+
+  a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+.card-container:hover {
+    background-color: #E0E0E0;
+}
+
+.contactDetail {
+    margin: o auto;
+    text-align: center;
+}
+
+.delete {
+    color: red;
+    cursor: pointer;
+}
