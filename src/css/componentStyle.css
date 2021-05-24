@@ -57,3 +57,7 @@
   .main-container {
     padding-left: 20px;
   }
+
+  img {
+      width: 50px;
+  }

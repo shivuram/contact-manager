@@ -1,5 +1,8 @@
+import Header from './Header'
 import ContactList from './ContactList';
+import AddContact from './AddContact';
 import React, { useState } from "react";
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 
 const ContactHome = () => {
     const [contacts, setContacts] = useState([]);
@@ -24,8 +27,18 @@ const ContactHome = () => {
     }
     return (
         <div>
-            <h2>Add Contacts</h2>
-            <ContactList contactData={contacts} addContactHandler={addContactHandler}/>
+            <Router>
+                <Header />
+                <Switch>
+                    <Route path="/add" render={props => (
+                        <AddContact addContactHandler={addContactHandler} />
+                    )}/>
+                    <Route path="/" exact render={(props) => (
+                        <ContactList {...props} contactData={contacts}  />
+                    )} />  
+
+                </Switch>
+            </Router>
         </div>
     )
 }

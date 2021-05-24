@@ -1,7 +1,9 @@
+
+
 const Header = () => {
     return (
         <div>
-            <h2>Contact Management</h2>
+            <h2>Contact Manager</h2>
             <hr />
         </div>
     )
